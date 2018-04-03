@@ -1,0 +1,129 @@
+body {
+    background-color: #0074D9;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.sidemenu {
+    display: none;
+    padding-top: 25vh;
+    text-align: center;
+    width: 300px;
+    height: 100vh;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=1); /* IE6-9 */;
+    opacity: 0.6;
+    float: left;
+}
+
+.sidemenu li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    font-size: 1.5em;
+    cursor: pointer
+}
+
+.sidemenu span {
+    padding-right: 10px;
+}
+
+.sidemenuf li:hover {
+    background: white;
+    color: black;
+}
+
+label {
+    margin: 0;
+    opacity: 0.5;
+    height: 100vh;
+    padding-top: 45vh;
+    padding-left: 15px;
+    font-size: 1.5em;
+    em;
+    float: left;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+label:hover {
+    color: white;
+    opacity: 1
+}
+
+label .glyphicon {
+    font-size: 2em;
+}
+
+.sidemenu li, label {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.rotate {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg)
+}
+
+section {
+    padding-top: 40vh;
+    text-align: center;
+}
+
+/*Media Queries height*/
+
+@media screen and ( max-height: 500px ) {
+    nav {
+        padding-top: 20vh;
+    }
+}
+
+@media screen and ( max-height: 300px ) {
+    nav {
+        padding-top: 10vh;
+    }
+}
+
+/*Media Queries width*/
+
+@media screen and (max-width: 800px) {
+
+    nav {
+        width: 100%;
+        position: absolute;
+        opacity: 0.7;
+        background: black;
+    }
+
+    label {
+        opacity: 0.8;
+        height: 70px;
+        padding-left: 15px;
+        padding-top: 20px;
+        float: left;
+        color: white;
+        position: absolute;
+    }
+
+    label:hover {
+        color: black;
+        opacity: 0.4
+    }
+
+
+}
+
+
+
+
